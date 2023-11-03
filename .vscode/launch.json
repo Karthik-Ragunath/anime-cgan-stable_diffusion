@@ -1,0 +1,35 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "train",
+            "type": "python",
+            "request": "launch",
+            "program": "${workspaceFolder}/train.py",
+            "console": "integratedTerminal",
+            "justMyCode": true,
+            "args": [
+                "--dataset", "Hayao",
+                "--batch", "6",
+                "--init-epochs", "4",
+                "--checkpoint-dir", "checkpoints",
+                "--save-image-dir", "save_imgs",
+                "--save-interval", "1",
+                "--gan-loss", "lsgan",
+                "--init-lr", "0.0001",
+                "--lr-g", "0.00002",
+                "--lr-d", "0.00004",
+                "--wadvd", "10.0",            
+                "--wadvg", "10.0",              
+                "--wcon", "1.5",              
+                "--wgra", "3.0",                
+                "--wcol", "30.0",                
+                "--resume", "GD",               
+                "--use_sn"
+            ]
+        }
+    ]
+}
