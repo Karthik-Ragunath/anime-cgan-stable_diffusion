@@ -32,6 +32,8 @@ bash scripts/download_checkpoints.sh
 ## 2. VSCODE DEBUGGER CONFIGS TO RUN TRAIN AND INFERENCE SCRIPTS
 
 ### 2.1 Train CGAN for converting images into anime style
+
+```
 {
     "name": "train",
     "type": "python",
@@ -59,8 +61,10 @@ bash scripts/download_checkpoints.sh
         "--use_sn"
     ]
 }
+```
 
 ### 2.2 Inference With CGAN
+```
 {
     "name": "animegan_inference",
     "type": "python",
@@ -74,8 +78,10 @@ bash scripts/download_checkpoints.sh
         "--dest", "save_imgs/inference_images/10_anime.jpg",
     ]
 }
+```
 
 ### 2.3 Edit Anime Styled Image With Stable-Diffusion
+```
 {
     "name": "edit_cli",
     "type": "python",
@@ -89,6 +95,7 @@ bash scripts/download_checkpoints.sh
         "--edit", "turn green chairs into blue"
     ]
 }
+```
 
 -----------------------
 ## 3. RESULTS
