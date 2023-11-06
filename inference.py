@@ -49,9 +49,6 @@ class Transformer:
             return fake
 
     def transform_file(self, file_path, save_path):
-        if not save_path.endswith('png'):
-            raise ValueError(f"{save_path} should be png format")
-
         image = read_image(file_path)
 
         if image is None:

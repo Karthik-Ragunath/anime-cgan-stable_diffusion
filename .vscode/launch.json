@@ -30,6 +30,32 @@
                 "--resume", "GD",               
                 "--use_sn"
             ]
+        },
+        {
+            "name": "edit_cli",
+            "type": "python",
+            "request": "launch",
+            "program": "${workspaceFolder}/edit_cli.py",
+            "console": "integratedTerminal",
+            "justMyCode": true,
+            "args": [
+                "--input", "save_imgs/inference_images/10_anime.jpg",
+                "--output", "save_imgs/inference_images/10_anime_stable_diffused.jpg",
+                "--edit", "turn green chairs into blue"
+            ]
+        },
+        {
+            "name": "animegan_inference",
+            "type": "python",
+            "request": "launch",
+            "program": "${workspaceFolder}/inference_image.py",
+            "console": "integratedTerminal",
+            "justMyCode": true,
+            "args": [
+                "--checkpoint", "checkpoints/generator_Hayao.pth",
+                "--src", "example/10.jpg",
+                "--dest", "save_imgs/inference_images/10_anime.jpg",
+            ]
         }
     ]
 }
