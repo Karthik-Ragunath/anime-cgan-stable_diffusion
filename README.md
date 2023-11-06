@@ -107,6 +107,9 @@ bash scripts/download_checkpoints.sh
 ![Anime Styled Image](save_imgs/inference_images/10_anime.jpg)
 
 ### 3.3 STABLE DIFFUSION EDITED IMAGE
+```
+CONDITIONAL QUERY - "turn green chairs into blue"
+```
 ![Stable Diffusion Edited Image](save_imgs/inference_images/10_anime_stable_diffused.jpg)
 
 -----------------------
